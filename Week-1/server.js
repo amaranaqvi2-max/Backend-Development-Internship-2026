@@ -11,6 +11,16 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/student", (req, res) => {
+  res.json({
+    name: "Amara Naqvi",
+    studentId: "IITCP-20459",
+    program: "BS Computer Science",
+    semester: 6,
+    email: "naqviammara7@gmail.com"
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
